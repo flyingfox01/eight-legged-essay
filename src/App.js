@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './002-closure';
 
 function App() {
   return (
