@@ -2,9 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 // import './002-closure';
 // import './003-event-loop';
-// import Demo5 from './005-two-way-data-binding';
-import Demo5 from './005-pub-sub';
-import './Vue/index.ts';
+// import Demo from './005-two-way-data-binding';
+// import Demo from './005-pub-sub';
+// import Demo from './006-debounce.js';
+import Demo from './006-throttle.js';
+import './007-multi-request.ts';
+
+// import './Vue/index.ts';
 
 function App() {
   return (
@@ -22,8 +26,7 @@ function App() {
         >
           Learn React
         </a>
-        {/* <Demo5 /> */}
-        <Demo5 />
+        <Demo />
       </header>
     </div>
   );
