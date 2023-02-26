@@ -6,7 +6,8 @@ import './App.css';
 // import Demo from './005-pub-sub';
 // import Demo from './006-debounce.js';
 import Demo from './006-throttle.js';
-import './007-multi-request.ts';
+// import './007-multi-request.ts';
+import './008-delete-min-count-char';
 
 // import './Vue/index.ts';
 
