@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import './002-closure';
+// import './002-closure';
+// import './003-event-loop';
+import Demo5 from './005-two-way-data-binding.js';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <Demo5 />
       </header>
     </div>
   );
