@@ -2,24 +2,25 @@ type Item = {
 	[key: string]: any
 }
 
-const foo = (arr: Item[]) => {
-	const map: Record<string, Item> = {
-		0: {
-			children: []
-		}
-	}
-	for(let item of arr) {
+const foo = (list: Item[]) => {
+	const map: Record<string, Item> = {}
+	const treeList: Item[] = []
+
+	list.forEach(item => {
+		if(!item.children) item.children = [];
+		map[item.id] = item
+	});
+
+	list.forEach(item => {
 		const parent = map[item.parentId];
 		if(parent) {
-			if(parent.children) parent.children.push(item);
-			parent.children = [item]
+			parent.children.push(item);
 		} else {
-			map[0].children.push(item);
+			treeList.push(item);
 		}
-		map[item.id] = item;
-	}
+	});
 
-	return map[0];
+	return treeList;
 }
 
 const arr = [
