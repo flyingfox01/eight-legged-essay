@@ -64,10 +64,22 @@ class MultiRequest {
 
 }
 
-// const mq = new MultiRequest(['url-1', 'url-2', 'url-3', 'url-4', 'url-5', 'url-6', 'url-7', 'url-8', 'url-9'])
-// mq.run();
-// setTimeout(() => {
-// 	mq.add('url-10')
-// }, 200);
+const urls = [
+	'https://jsonplaceholder.typicode.com/todos/1',
+	'https://jsonplaceholder.typicode.com/todos/2',
+	'https://jsonplaceholder.typicode.com/todos/3',
+	'https://jsonplaceholder.typicode.com/todos/4',
+	'https://jsonplaceholder.typicode.com/todos/5',
+	'https://jsonplaceholder.typicode.com/todos/6',
+	'https://jsonplaceholder.typicode.com/todos/7',
+	'https://jsonplaceholder.typicode.com/todos/8',
+	'https://jsonplaceholder.typicode.com/todos/9',
+	'https://jsonplaceholder.typicode.com/todos/10',
+];
+const mq = new MultiRequest(urls)
+mq.run();
+setTimeout(() => {
+	mq.add('url-10')
+}, 200);
 
 export default MultiRequest;
