@@ -5,7 +5,7 @@ import './App.css';
 // import Demo from './005-two-way-data-binding';
 // import Demo from './005-pub-sub';
 // import Demo from './006-debounce.js';
-// import Demo from './006-throttle.js';
+import Demo from './006-throttle.js';
 // import './007-multi-request.ts';
 // import './008-delete-min-count-char';
 // import './009-array-2-tree';
@@ -13,7 +13,8 @@ import './App.css';
 // import './013-cross';
 // import './014-sleep';
 // import './007-batch-request';
-import { VirtualListDemo as Demo } from './025-virtual-list';
+import './051-decorator';
+// import { VirtualListDemo as Demo } from './025-virtual-list';
 
 // import './Vue/index.ts';
 

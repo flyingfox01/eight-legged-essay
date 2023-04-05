@@ -50,7 +50,6 @@ const VirtualList = <T,>({
   );
 };
 
-
 export const VirtualListDemo = () => {
   const data = Array.from({ length: 10000 }, (_, i) => i);
   const itemHeight = 50;
