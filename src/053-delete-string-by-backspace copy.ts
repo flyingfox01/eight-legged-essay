@@ -13,17 +13,22 @@ function fn(str1: string, str2: string) {
 
       if(char === '<' && !flag) {
         flag += 1
-      } else if(char === '-' && flag === 1) {
-        flag += 1
+      } else if(flag === 1) {
+        if(char === '-') {
+          flag += 1
+        } else {
+          flag -= 1
+        }
       }
 
       if(flag === 2) {
         stack.pop();
         stack.pop();
+        stack.pop();
         flag = 0
       }
     }
-
+    // console.log(String(stack))
     return String(stack);
   }
 

@@ -1,5 +1,5 @@
 // 用了定时器，所以最后一次会触发
-const throtte1 = (fn, wait) => {
+export const throtte1 = (fn, wait) => {
 	let flag = true
 	return function(){
 		if(flag) {
@@ -14,7 +14,7 @@ const throtte1 = (fn, wait) => {
 }
 
 // 计算时间的，所以第一次会执行
-const throtte2 = (fn, wait) => {
+export const throtte2 = (fn, wait) => {
 	let pre = 0;
 	return function() {
 		const now = new Date().getTime();

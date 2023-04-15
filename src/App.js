@@ -13,7 +13,9 @@ import Demo from './006-throttle.js';
 // import './013-cross';
 // import './014-sleep';
 // import './007-batch-request';
-import './051-decorator';
+// import './051-decorator';
+// import './053-delete-string-by-backspace';
+import './054-promise-then-catch';
 // import { VirtualListDemo as Demo } from './025-virtual-list';
 
 // import './Vue/index.ts';

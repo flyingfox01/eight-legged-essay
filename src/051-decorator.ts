@@ -65,7 +65,7 @@ class Greeter {
 
   @enumerable(false)
   @validate
-  greet(@required name: string) {
+  greet(@required name: string) {// TODO 编译不通过为啥？
     let formatString = getFormat(this, "greeting");
     return formatString.replace("%s", name + ',' + this.greeting);
   }
